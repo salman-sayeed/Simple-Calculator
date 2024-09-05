@@ -222,12 +222,12 @@
             // mainTb
             // 
             this.mainTb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mainTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainTb.Location = new System.Drawing.Point(27, 129);
+            this.mainTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainTb.Location = new System.Drawing.Point(26, 129);
             this.mainTb.Multiline = true;
             this.mainTb.Name = "mainTb";
             this.mainTb.ReadOnly = true;
-            this.mainTb.Size = new System.Drawing.Size(297, 47);
+            this.mainTb.Size = new System.Drawing.Size(297, 50);
             this.mainTb.TabIndex = 18;
             this.mainTb.Text = "0";
             this.mainTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
