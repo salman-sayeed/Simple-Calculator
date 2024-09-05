@@ -21,6 +21,7 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
+            lbDisplay.Visible = false;
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -109,6 +110,8 @@ namespace Calculator
             num1 = int.Parse(mainTb.Text);
 
             mainTb.Text = "0";
+            lbDisplay.Text = num1 + " + ";
+            lbDisplay.Visible = true;
         }
 
         private void btnSub_Click(object sender, EventArgs e)
@@ -117,6 +120,8 @@ namespace Calculator
             num1 = int.Parse(mainTb.Text);
 
             mainTb.Text = "0";
+            lbDisplay.Text = num1 + " - ";
+            lbDisplay.Visible = true;
         }
 
         private void btnMulti_Click(object sender, EventArgs e)
@@ -125,6 +130,8 @@ namespace Calculator
             num1 = int.Parse(mainTb.Text);
 
             mainTb.Text = "0";
+            lbDisplay.Text = num1 + " x ";
+            lbDisplay.Visible = true;
         }
 
         private void btnDiv_Click(object sender, EventArgs e)
@@ -133,6 +140,8 @@ namespace Calculator
             num1 = int.Parse(mainTb.Text);
 
             mainTb.Text = "0";
+            lbDisplay.Text = num1 + " / ";
+            lbDisplay.Visible = true;
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
@@ -140,7 +149,9 @@ namespace Calculator
             num2 = int.Parse(mainTb.Text);
 
             if (operation == "+")
-            { result = num1 + num2; }
+            { 
+                result = num1 + num2;
+            }
             else if (operation == "-")
             { result = num1 - num2; }
             else if (operation == "*")
@@ -149,6 +160,7 @@ namespace Calculator
             { result = num1 / num2; }
 
             mainTb.Text = result.ToString();
+            lbDisplay.Text = lbDisplay.Text + "" + num2;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -157,9 +169,16 @@ namespace Calculator
             num1 = 0;
             num2 = 0;
             result = 0;
+            lbDisplay.Text = "";
+            lbDisplay.Visible=false;
         }
 
         private void mainTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbDisplay_Click(object sender, EventArgs e)
         {
 
         }

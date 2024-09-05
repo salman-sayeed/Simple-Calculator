@@ -47,6 +47,7 @@
             this.btn8 = new System.Windows.Forms.Button();
             this.displayBox = new System.Windows.Forms.TextBox();
             this.mainTb = new System.Windows.Forms.TextBox();
+            this.lbDisplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClear
@@ -233,11 +234,23 @@
             this.mainTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.mainTb.TextChanged += new System.EventHandler(this.mainTb_TextChanged);
             // 
+            // lbDisplay
+            // 
+            this.lbDisplay.AutoSize = true;
+            this.lbDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDisplay.Location = new System.Drawing.Point(27, 31);
+            this.lbDisplay.Name = "lbDisplay";
+            this.lbDisplay.Size = new System.Drawing.Size(90, 22);
+            this.lbDisplay.TabIndex = 19;
+            this.lbDisplay.Text = "I\'m a label";
+            this.lbDisplay.Click += new System.EventHandler(this.lbDisplay_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 462);
+            this.Controls.Add(this.lbDisplay);
             this.Controls.Add(this.mainTb);
             this.Controls.Add(this.displayBox);
             this.Controls.Add(this.btn8);
@@ -285,6 +298,7 @@
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.TextBox displayBox;
         private System.Windows.Forms.TextBox mainTb;
+        private System.Windows.Forms.Label lbDisplay;
     }
 }
 
