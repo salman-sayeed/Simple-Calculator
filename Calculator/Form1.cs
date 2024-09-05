@@ -158,5 +158,10 @@ namespace Calculator
             num2 = 0;
             result = 0;
         }
+
+        private void mainTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

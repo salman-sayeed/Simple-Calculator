@@ -45,6 +45,7 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
+            this.displayBox = new System.Windows.Forms.TextBox();
             this.mainTb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -208,20 +209,29 @@
             this.btn8.UseVisualStyleBackColor = true;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
+            // displayBox
+            // 
+            this.displayBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.displayBox.Location = new System.Drawing.Point(12, 12);
+            this.displayBox.Multiline = true;
+            this.displayBox.Name = "displayBox";
+            this.displayBox.ReadOnly = true;
+            this.displayBox.Size = new System.Drawing.Size(318, 176);
+            this.displayBox.TabIndex = 17;
+            // 
             // mainTb
             // 
-            this.mainTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mainTb.CausesValidation = false;
+            this.mainTb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mainTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainTb.Location = new System.Drawing.Point(12, 13);
+            this.mainTb.Location = new System.Drawing.Point(27, 129);
             this.mainTb.Multiline = true;
             this.mainTb.Name = "mainTb";
             this.mainTb.ReadOnly = true;
-            this.mainTb.Size = new System.Drawing.Size(318, 178);
-            this.mainTb.TabIndex = 16;
-            this.mainTb.TabStop = false;
+            this.mainTb.Size = new System.Drawing.Size(297, 47);
+            this.mainTb.TabIndex = 18;
             this.mainTb.Text = "0";
             this.mainTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.mainTb.TextChanged += new System.EventHandler(this.mainTb_TextChanged);
             // 
             // Form1
             // 
@@ -229,6 +239,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 462);
             this.Controls.Add(this.mainTb);
+            this.Controls.Add(this.displayBox);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.btn9);
@@ -272,6 +283,7 @@
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.TextBox displayBox;
         private System.Windows.Forms.TextBox mainTb;
     }
 }
