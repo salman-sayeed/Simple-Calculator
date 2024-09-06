@@ -307,9 +307,9 @@
             this.lbDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDisplay.Location = new System.Drawing.Point(27, 31);
             this.lbDisplay.Name = "lbDisplay";
-            this.lbDisplay.Size = new System.Drawing.Size(90, 22);
+            this.lbDisplay.Size = new System.Drawing.Size(152, 22);
             this.lbDisplay.TabIndex = 19;
-            this.lbDisplay.Text = "I\'m a label";
+            this.lbDisplay.Text = "I\'m a Hidden label";
             this.lbDisplay.Click += new System.EventHandler(this.lbDisplay_Click);
             // 
             // Form1
